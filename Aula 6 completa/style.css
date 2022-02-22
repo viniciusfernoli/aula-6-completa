@@ -2,55 +2,130 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font: inherit;
   vertical-align: baseline;
   list-style-type: none;
 }
 
-#banner {
+header {
+  background-color: #bbbbbb;
+  padding: 1.5rem 0;
+}
+
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+ul.produto_header li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.div-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+  margin: 2rem 0;
+}
+
+.div-services a {
+  text-decoration: none;
+  color: black;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+div.div-services div {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1.8rem 0;
   width: 100%;
 }
 
-.principal {
-  background: #cccccc;
-  padding: 2rem;
+div.div-services div:hover {
+  border-color: rgb(156, 132, 26);
 }
 
-.titulo-principal {
-  padding-left: 1.5rem;
+div.div-services div:hover p:first-child {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
-.titulo-centralizado {
-  text-align: center;
+.div-services div p:first-child {
+  font-weight: bold;
+  font-size: 2.5rem;
+  word-break: break-all;
 }
 
-p {
-  text-align: center;
-}
-
-#missao {
+.div-services div p:last-child {
+  font-weight: bold;
   font-size: 1.5rem;
+  margin: 0.6rem 0 0;
 }
 
-em strong {
-  color: #ff0000;
+footer {
+  text-align: center;
+  background: url('./imagens/bg.jpg');
+  padding: 2rem 0rem;
 }
 
-.itens {
-  font-style: italic;
+footer p.copyright {
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
 }
 
-.beneficios {
-  background: #ffffff;
-  padding: 1.5rem;
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ul {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+.contact form {
+  margin: 3rem 0;
 }
 
-.imagembeneficios {
-  width: 50%;
+.contact div {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact input {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.w-input {
+  width: 100%;
+}
+
+#submit {
+  width: 10rem;
+  height: 3rem;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid black;
+  border-radius: 5px;
 }
